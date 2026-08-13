@@ -29,7 +29,7 @@
           <mxGeometry x="430" y="140" width="310" height="150" as="geometry" />
         </mxCell>
         <mxCell id="publish" value="&lt;b style=&quot;font-size:14px&quot;&gt;&lt;font color=&quot;#237a35&quot;&gt;✚&lt;/font&gt; Сервис публикации данных&lt;/b&gt;&lt;br&gt;(on-prem; выделен из ИС «Аукцион» — архитектурное решение)&lt;br&gt;&lt;br&gt;• витрина данных оцифровки для покупателей&lt;br&gt;• публикация лотов и описаний (вместо внешнего облака)" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="430" y="360" width="310" height="140" as="geometry" />
+          <mxGeometry x="430" y="375" width="310" height="140" as="geometry" />
         </mxCell>
         <mxCell id="excel" value="&lt;b style=&quot;font-size:14px&quot;&gt;&lt;font color=&quot;#b02318&quot;&gt;✕&lt;/font&gt; Excel-реестры&lt;/b&gt;&lt;br&gt;&lt;s&gt;вводные для аукциона по шаблонам&lt;/s&gt;&lt;br&gt;&lt;br&gt;ВЫВОДИТСЯ: функции перенесены в ИС" style="shape=note;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=10;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;size=18;" vertex="1" parent="1">
           <mxGeometry x="430" y="630" width="310" height="140" as="geometry" />
@@ -52,7 +52,7 @@
           <mxGeometry x="45" y="685" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="a-org" value="Организатор&#10;аукциона" style="shape=umlActor;verticalLabelPosition=bottom;labelPosition=center;verticalAlign=top;html=1;fontSize=10;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="748" y="180" width="30" height="60" as="geometry" />
+          <mxGeometry x="756" y="180" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="a-labop" value="Оператор&#10;лаборатории" style="shape=umlActor;verticalLabelPosition=bottom;labelPosition=center;verticalAlign=top;html=1;fontSize=10;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="1150" y="322" width="30" height="60" as="geometry" />
@@ -82,7 +82,6 @@
               <mxPoint x="360" y="267" />
               <mxPoint x="360" y="415" />
             </Array>
-            <mxPoint as="offset" x="0" y="60" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e10" value="перечень лотов · авто ✚ (допущение)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#82b366;fontColor=#3a7d34;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.15;exitDx=0;exitDy=0;entryX=0;entryY=0.18;entryDx=0;entryDy=0;" edge="1" parent="1" source="almazy" target="auction">
@@ -114,9 +113,10 @@
         <mxCell id="e11" value="ставки покупателей&#10;· авто ⚑ (допущение)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#6c8ebf;fontColor=#3b5a86;fontSize=11;labelBackgroundColor=#ffffff;exitX=0;exitY=0.35;exitDx=0;exitDy=0;entryX=0;entryY=0.6;entryDx=0;entryDy=0;" edge="1" parent="1" source="publish" target="auction">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="400" y="409" />
+              <mxPoint x="400" y="424" />
               <mxPoint x="400" y="230" />
             </Array>
+            <mxPoint as="offset" x="0" y="-60" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e13" value="результаты торгов (победители,&#10;суммы) · авто ⚑ (допущение)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#6c8ebf;fontColor=#3b5a86;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=1;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="auction" target="accounting">
@@ -133,8 +133,9 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="858" y="653" />
-              <mxPoint x="858" y="416" />
+              <mxPoint x="858" y="431" />
             </Array>
+            <mxPoint as="offset" x="30" y="90" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e2" value="перевозка камней&#10;(туда и обратно)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;strokeWidth=2;endArrow=open;startArrow=open;strokeColor=#b3b3b3;fontColor=#999999;fontSize=10;labelBackgroundColor=#ffffff;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0;entryY=0.95;entryDx=0;entryDy=0;" edge="1" parent="1" source="logistics" target="lab">
@@ -147,19 +148,24 @@
         </mxCell>
 
         <mxCell id="r1" value="заменяется" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=4 4;endArrow=block;strokeColor=#b85450;fontColor=#b85450;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="excel" target="publish">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" x="40" y="0" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="r2" value="перенос on-prem" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=4 4;endArrow=block;strokeColor=#b85450;fontColor=#b85450;fontSize=10;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.8;entryDx=0;entryDy=0;" edge="1" parent="1" source="cloud" target="publish">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="810" y="505" />
-              <mxPoint x="810" y="472" />
+              <mxPoint x="810" y="487" />
             </Array>
           </mxGeometry>
         </mxCell>
 
-        <mxCell id="legend" value="&lt;b style=&quot;font-size:14px&quot;&gt;Условные обозначения&lt;/b&gt; (нотация — дельта от ПРОМЕЖУТОЧНОГО решения, Task3)&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#237a35&quot;&gt;&lt;b&gt;✚&lt;/b&gt;&lt;/font&gt; новое — зелёный&#160;&#160;&#160;&lt;font color=&quot;#1a56a8&quot;&gt;&lt;b&gt;⚑&lt;/b&gt;&lt;/font&gt; изменяемое (в т. ч. интеграция, ставшая автоматической / получившая защищённый канал) — синий&#160;&#160;&#160;&lt;font color=&quot;#b02318&quot;&gt;&lt;b&gt;✕&lt;/b&gt;&lt;/font&gt; выводимое — красный&lt;br&gt;——— синяя сплошная: изменённая интеграция ⚑&#160;&#160;&#160;——— серая сплошная: существующая авто-интеграция без изменений&#160;&#160;&#160;——— зелёная сплошная: новая авто-интеграция ✚&#160;&#160;&#160;– – красный пунктир: замена / вывод из эксплуатации&#160;&#160;&#160;– – серый штриховой (толстый): физическое перемещение камней&#160;&#160;&#160;——— синяя с открытой стрелкой: взаимодействие покупателя с порталом&lt;br&gt;Пометка «(допущение)» в подписи — интеграция, прямо не названная в кейсе (в Task3 такие показаны точечным пунктиром; здесь они автоматизированы и помечены текстом).&lt;br&gt;В целевом решении Excel-реестры и внешнее частное облако выводятся; публикация перенесена на серверы компании; все интеграции автоматизированы, конфиденциальные данные передаются по выделенным защищённым каналам." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="40" y="840" width="1240" height="158" as="geometry" />
+        <mxCell id="legend-marks" value="&lt;b style=&quot;font-size:14px&quot;&gt;Условные обозначения — маркеры&lt;/b&gt;&#160;(дельта от ПРОМЕЖУТОЧНОГО решения, Task3)&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#237a35&quot;&gt;&lt;b&gt;✚&lt;/b&gt;&lt;/font&gt;&#160;&#160;новое — зелёный&lt;br&gt;&lt;font color=&quot;#1a56a8&quot;&gt;&lt;b&gt;⚑&lt;/b&gt;&lt;/font&gt;&#160;&#160;изменяемое (в т. ч. интеграция, ставшая автоматической&lt;br&gt;&#160;&#160;&#160;&#160;&#160;&#160;/ получившая защищённый канал) — синий&lt;br&gt;&lt;font color=&quot;#b02318&quot;&gt;&lt;b&gt;✕&lt;/b&gt;&lt;/font&gt;&#160;&#160;выводимое — красный&lt;br&gt;&lt;br&gt;«(допущение)» в подписи — интеграция, прямо не названная в кейсе&lt;br&gt;(в Task3 такие показаны точечным пунктиром; здесь автоматизированы)." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="830" width="600" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-lines" value="&lt;b style=&quot;font-size:14px&quot;&gt;Условные обозначения — линии&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#3b5a86&quot;&gt;———&lt;/font&gt;&#160;&#160;синяя сплошная: изменённая интеграция ⚑&lt;br&gt;&lt;font color=&quot;#555555&quot;&gt;———&lt;/font&gt;&#160;&#160;серая сплошная: существующая авто-интеграция без изменений&lt;br&gt;&lt;font color=&quot;#3a7d34&quot;&gt;———&lt;/font&gt;&#160;&#160;зелёная сплошная: новая авто-интеграция ✚&lt;br&gt;&lt;font color=&quot;#b85450&quot;&gt;–&#160;–&lt;/font&gt;&#160;&#160;красный пунктир: замена / вывод из эксплуатации&lt;br&gt;&lt;font color=&quot;#999999&quot;&gt;&lt;b&gt;–&#160;–&lt;/b&gt;&lt;/font&gt;&#160;&#160;серый штриховой (толстый): физическое перемещение камней&lt;br&gt;&lt;font color=&quot;#3b5a86&quot;&gt;———&lt;/font&gt;&#160;&#160;синяя с открытой стрелкой: взаимодействие покупателя с порталом" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="660" y="830" width="620" height="250" as="geometry" />
         </mxCell>
 
       </root>
