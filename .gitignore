@@ -1,0 +1,16 @@
+# Working notes / session logs — not part of the submission
+docs/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+*.bak
+
+# draw.io / diagram backups
+*.drawio.bkp
+*.dtmp
+
+# IDE
+.idea/
